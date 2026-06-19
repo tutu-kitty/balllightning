@@ -1,20 +1,63 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# ⚡《球状闪电》量子物理与科幻观测实验室 (Ball Lightning Laboratory)
 
-# Run and deploy your AI Studio app
+这是一个基于刘慈欣经典科幻小说《球状闪电》宇宙观设计的**复古交互式科研观测终端**。项目融合了复古终端美学与现代前端交互，逼真地还原了小说中对“宏电子”概率云的观测、激发、以及引力/电磁场干扰等核心科幻物理机制，并内置了完整的《球状闪电》文献数据库。
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/26be0519-f3bf-4056-8b28-ef31aa645aec
+## 🎨 核心功能与画卷
 
-## Run Locally
+在这一观测面板中，你将置身于泰山雷电研究所或大兴安岭的暴雨观测基地，亲手探索量子尺度的宏电子世界：
 
-**Prerequisites:**  Node.js
+### 1. **量子级宏电子观测画布 (`BallLightningCanvas.tsx`)**
+*   **不确定性概率云 (Probability Wave)**：未被观测时，宏电子以无数幽灵般的蓝色量子丝（粒子云轨迹）在雷雨夜空中无规则漂移，呈现概率幅叠加态。
+*   **观测者效应与波包坍缩 (Observation & Wave Collapse)**：
+    *   在画布或球状闪电周围**按住鼠标左键**（移动端长按并点击），即可施加“意识观测”。
+    *   量子概率云会瞬间发生坍缩（Wave Function Collapse），凝结为一颗极其稳定、爆发出夺目金光的物理发光实体——**金黄色基态球状闪电**。
+*   **磁场增幅干扰 (Magnetic Interaction)**：开启“激发磁场”控制，将会为宏电子云注入电磁束缚振幅，导致量子微粒加速并向磁场中心共振。
 
+### 2. **暴雨雷电环境模拟 (`RetroRoom.tsx`)**
+*   **窗外雷雨交互**：支持开关隔音观察窗。开启窗户时，暴雨啸鸣，随机频闪的“闪电划破夜空”效果会自动投射进整个观测室。
+*   **雷电手动激发**：点击“雷电闪光测试”可手动触发雷雨夜景，在视差效果中见证惊雷与强光闪烁。
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 3. **小说数据库与科幻物理讲堂**
+*   **小说经典文献摘录**：包含精心挑选的《球状闪电》原著硬核段落，包括雷暴夜的雷击、父亲逝去、张彬的宏原子猜想，采用古典衬线字体优雅呈现。
+*   **量子物理概念科普**：收录了五大核心物理概念数据库（可通过底部标签栏随时切换）：
+    *   **宏原子理论 (Macro-Atom Theory)** — 大爆炸初期留下的巨型粒子。
+    *   **量子波粒二象性 (Superposition)** — 不看它时是概率波，看它时是粒子。
+    *   **观察者与波包坍缩 (Observation)** — 意识如何决定宏原子的物理状态。
+    *   **能量选择性释放 (Selective Decay)** — 物质产生特定波长共振时极冷或极热的奇异衰变。
+    *   **量子幽灵存续态 (Quantum Ghosts)** — 逝去之物在不被凝视之时的叠加态存续。
+
+---
+
+## 🛠️ 技术栈
+
+*   **框架**: React 18 & TypeScript
+*   **构建工具**: Vite (极速热重载与编译打包)
+*   **样式方案**: Tailwind CSS (现代、响应式、暗黑科技像素风格)
+*   **动画库**: `motion` (用于窗体与交互动效的流畅呈现)
+*   **图标库**: `lucide-react`
+*   **渲染引擎**: HTML5 Canvas + 高性能粒子波束仿真算法
+
+---
+
+## 📂 项目结构
+
+```text
+├── src/
+│   ├── components/
+│   │   ├── BallLightningCanvas.tsx  # 核心：宏电子量子波、电磁场、鼠标波包坍缩交互画布
+│   │   └── RetroRoom.tsx            # 面板：暴风雨音效、主控台、小说历史文献与物理概念数据库
+│   ├── utils/                       # 辅助科学算法和声光波驱动
+│   ├── App.tsx                      # 应用主入口
+│   ├── main.tsx                     # React 根装载
+│   └── index.css                    # 统一 Tailwind CSS @import 入口与复古科技字体定义
+├── package.json                     # 依赖和极速启动脚本
+├── metadata.json                    # 应用元数据
+└── README.md                        # 本文献
+```
+
+---
+
+*“在暮色中，我看着闪电在空中画出一个耀眼的火球，量子叠加在寂静的空气中，它在等待第一个投向它的目光。”* - 致敬刘慈欣《球状闪电》。
+
