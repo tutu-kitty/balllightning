@@ -1,0 +1,6 @@
+{
+  "name": "雨夜窗景-球状闪电",
+  "description": "基于刘慈欣小说《球状闪电》的复古交互页面。在90年代暖黄光影中，开启旧窗户，调节磁场约束，激发并观测漂流的量子球状闪电特效。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
